@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+
+.layout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo_modal {
+    background-color: rgb(94, 151, 172);
+    border-radius: 50px;
+    width: 35%;
+    height: 70%;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.input {
+    font-family: 'Akshar', sans-serif;
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    border: 4px solid rgb(8, 191, 236);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.button {
+    background-color: rgb(8, 191, 236);
+    width: 55px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 40px;
+    color: white;
+}
+
+.list-margin {
+    margin-top: 40px;
+    height: 450px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Designing for scroll-bar */
+::-webkit-scrollbar {
+    display: none;
+    background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(8, 191, 236);
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(8, 191, 236);
+}
