@@ -29,7 +29,7 @@ export default function Todo() {
 
     const addTodo = (e) => {
         e.preventDefault();
-        if (input == "") {
+        if (input === "") {
             setEmptyinput("Please Enter a task")
         } else {
             const task = { id: todoList.length + 1, task: input, complete: false, }
@@ -42,7 +42,7 @@ export default function Todo() {
     const removeTodo = (todoToDelete) => {
         console.log(todoToDelete)
         const filterTodo = todoList.filter(todo => {
-            return todo.id != todoToDelete
+            return todo.id !== todoToDelete
         });
         setTodoList(filterTodo)
     }
