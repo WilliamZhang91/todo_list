@@ -7,7 +7,7 @@ test("should render todo component", () => {
     const todoElement = screen.getByTestId("todo");
     expect(todoElement).toBeInTheDocument();
     expect(todoElement).toHaveTextContent("+");
-    screen.getByPlaceholderText('Add To do...');
+    screen.getByPlaceholderText('Add something to do...');
 
     //Form input should be blank
     const input = screen.getByTestId("input");
