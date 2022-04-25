@@ -57,7 +57,7 @@ export default function Todo() {
                     <input
                         type="text"
                         id="addToDo"
-                        placeholder="Add something to do"
+                        placeholder="Add something to do."
                         className="input"
                         value={input}
                         onChange={handleInputChange}
