@@ -1,1 +1,1 @@
-Simple to do list with CI/CD using Github Actions and Pages
+Simple to do list using React, with CI/CD using Github Actions and Pages
