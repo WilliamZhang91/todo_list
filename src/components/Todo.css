@@ -6,12 +6,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .todo_modal {
     background-color: rgb(94, 151, 172);
     border-radius: 50px;
-    width: 35%;
+    width: 600px;
     height: 70%;
 }
 
@@ -24,13 +25,12 @@
 
 .input {
     font-family: 'Akshar', sans-serif;
-    width: 400px;
+    width: 300px;
     height: 50px;
     font-size: 20px;
     border: 4px solid rgb(8, 191, 236);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    padding-left: 10px;
 }
 
 input:focus {
@@ -75,4 +75,17 @@ input:focus {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(8, 191, 236);
+}
+
+@media screen and (max-width: 727px) {
+    .todo_modal {
+        background-color: rgb(94, 151, 172);
+        border-radius: 50px;
+        width: 450px;
+        height: 70%;
+    }
+
+    .form {
+        
+    }
 }

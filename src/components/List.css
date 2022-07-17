@@ -1,8 +1,9 @@
 .list {
-    width: 100%;
+    width: 359px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .list-item {
@@ -21,4 +22,8 @@
 .delete {
     font-size: 25px;
     color: rgb(8, 191, 236)
+}
+
+@media screen and (max-width: 600px) {
+    
 }

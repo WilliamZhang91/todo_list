@@ -26,10 +26,13 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
 
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.3.2
-      with:
-        branch: gh-pages # The branch the action should deploy to.
-        folder: build # The folder the action should deploy.
-      #env: 
-        #github-token: ${{ secrets.TODO_LIST_ACCESS_TOKEN }}
+    deploy: 
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "tdl123"
+          heroku_email: ${{secrets.HEROKU_EMAIL}}  

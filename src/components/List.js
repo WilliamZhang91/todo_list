@@ -12,6 +12,7 @@ export default function List(props) {
                     <MdDelete
                         onClick={() => props.removeTodo(props.todo.id)}
                         className="delete"
+                        data-testid={`deleteButton${props.todo.id}`}
                     />
                 </div>
             </div>
