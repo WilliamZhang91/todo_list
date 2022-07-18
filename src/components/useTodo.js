@@ -52,6 +52,6 @@ export const useTodo = () => {
         addTodo,
         removeTodo,
         initialList,
-    }
+    };
 
 }
