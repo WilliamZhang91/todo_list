@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import "./Todo.css";
 import List from './List';
 import { useTodo } from './useTodo';
