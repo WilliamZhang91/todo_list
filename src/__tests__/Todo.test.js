@@ -19,7 +19,6 @@ const addTodo = (todo) => {
 };
 
 describe("todo tests", () => {
-
     let wrapper
 
     beforeEach(() => {
