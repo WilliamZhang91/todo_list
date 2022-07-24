@@ -42,7 +42,7 @@ export const useTodo = () => {
             return todo.id !== todoToDelete
         });
         setTodoList(filterTodo)
-    }
+    };
 
     return {
         todoList,
@@ -52,6 +52,6 @@ export const useTodo = () => {
         addTodo,
         removeTodo,
         initialList,
-    }
+    };
 
 }
